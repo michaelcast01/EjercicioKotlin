@@ -1,10 +1,10 @@
 fun main() {
     // Denominacion permitida
-    val d20 = 20
-    val d50 = 50
-    val d100 = 100
-    val d200 = 200
-    val d500 = 500
+    val m20 = 20
+    val m50 = 50
+    val m100 = 100
+    val m200 = 200
+    val m500 = 500
 
     // Contar monedas
     var monedas20 = 0
@@ -30,39 +30,39 @@ fun main() {
                 print("Ingresar Moneda (20, 50, 100, 200, 500): ")
                 val valor = readLine()!!.toInt()
                 when (valor) {
-                    d20 -> {
+                    m20 -> {
                         monedas20++
-                        println("Se ha agregado una moneda de $$d20.")
+                        println("Se ha agregado una moneda de $$m20.")
                     }
-                    d50 -> {
+                    m50 -> {
                         monedas50++
-                        println("Se ha agregado una moneda de $$d50.")
+                        println("Se ha agregado una moneda de $$m50.")
                     }
-                    d100 -> {
+                    m100 -> {
                         monedas100++
-                        println("Se ha agregado una moneda de $$d100.")
+                        println("Se ha agregado una moneda de $$m100.")
                     }
-                    d200 -> {
+                    m200 -> {
                         monedas200++
-                        println("Se ha agregado una moneda de $$d200.")
+                        println("Se ha agregado una moneda de $$m200.")
                     }
-                    d500 -> {
+                    m500 -> {
                         monedas500++
-                        println("Se ha agregado una moneda de $$d500.")
+                        println("Se ha agregado una moneda de $$m500.")
                     }
                     else -> println("Moneda de $$valor no permitida.")
                 }
             }
             "2" -> {
                 println("\nConteo de monedas:")
-                println("Monedas de $$d20: $monedas20")
-                println("Monedas de $$d50: $monedas50")
-                println("Monedas de $$d100: $monedas100")
-                println("Monedas de $$d200: $monedas200")
-                println("Monedas de $$d500: $monedas500")
+                println("Monedas de $$m20: $monedas20")
+                println("Monedas de $$m50: $monedas50")
+                println("Monedas de $$m100: $monedas100")
+                println("Monedas de $$m200: $monedas200")
+                println("Monedas de $$m500: $monedas500")
             }
             "3" -> {
-                val total = monedas20 * d20 + monedas50 * d50 + monedas100 * d100 + monedas200 * d200 + monedas500 * d500
+                val total = monedas20 * m20 + monedas50 * m50 + monedas100 * m100 + monedas200 * m200 + monedas500 * m500
                 println("\nTotal ahorrado: \$$total")
             }
             "4" -> {
