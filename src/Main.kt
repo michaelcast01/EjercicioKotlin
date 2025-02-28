@@ -10,7 +10,6 @@ fun main() {
         if (codigoAcceso == null) {
             fallos++
             println("Código inválido. Intente nuevamente.")
-            continue
         }
         // Verifica el rango correspondiente
         when (codigoAcceso) {
